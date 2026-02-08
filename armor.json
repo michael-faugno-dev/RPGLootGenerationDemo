@@ -1,0 +1,399 @@
+{
+  "armor": {
+    "helmet": {
+      "code": "helmet",
+      "name": "Helmet",
+      "category": "armor",
+      "slot": "head",
+      "description": "Protective headgear with neural interface capabilities",
+      "base_stats": {
+        "HP": {
+          "type": "flat",
+          "T1": 50,
+          "T2": 75,
+          "T3": 100,
+          "T4": 125
+        },
+        "crit_resist": {
+          "type": "percent",
+          "T1": 2,
+          "T2": 4,
+          "T3": 6,
+          "T4": 8
+        }
+      },
+      "tier_names": {
+        "T1": "Neurovisor",
+        "T2": "Datajack Helm",
+        "T3": "Synapse Crown",
+        "T4": "Overmind Halo"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "STR": 10 },
+        "T3": { "level": 26, "STR": 20 },
+        "T4": { "level": 41, "STR": 35 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "plus_to_skill": 1.5,
+        "specific_ability_cdr": 1.4,
+        "trans_duration_length": 1.3,
+        "hp": 1.2
+      }
+    },
+    "shoulder": {
+      "code": "shoulder",
+      "name": "Shoulder",
+      "category": "armor",
+      "slot": "shoulders",
+      "description": "Reinforced shoulder plating with integrated shielding",
+      "base_stats": {
+        "HP": {
+          "type": "flat",
+          "T1": 40,
+          "T2": 60,
+          "T3": 80,
+          "T4": 100
+        },
+        "status_resist": {
+          "type": "percent",
+          "T1": 5,
+          "T2": 10,
+          "T3": 15,
+          "T4": 20
+        }
+      },
+      "tier_names": {
+        "T1": "Steel Pad",
+        "T2": "Servo Mantle",
+        "T3": "Ion Pauldron",
+        "T4": "Nebula Shoulderguard"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "STR": 12 },
+        "T3": { "level": 26, "STR": 24 },
+        "T4": { "level": 41, "STR": 40 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "trans_defense": 1.5,
+        "basic_defense": 1.4,
+        "endurance_threshold": 1.3
+      }
+    },
+    "body": {
+      "code": "body",
+      "name": "Body",
+      "category": "armor",
+      "slot": "chest",
+      "description": "Core armor chassis providing maximum protection",
+      "base_stats": {
+        "HP": {
+          "type": "flat",
+          "T1": 80,
+          "T2": 120,
+          "T3": 160,
+          "T4": 200
+        }
+      },
+      "tier_names": {
+        "T1": "Kevlar Weave",
+        "T2": "Circuit Mesh",
+        "T3": "Nano Carapace",
+        "T4": "Starlight Exosuit"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "STR": 15 },
+        "T3": { "level": 26, "STR": 30 },
+        "T4": { "level": 41, "STR": 50 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "hp": 1.8,
+        "trans_defense": 1.4,
+        "basic_defense": 1.4,
+        "endurance_percent": 1.3
+      }
+    },
+    "gloves": {
+      "code": "gloves",
+      "name": "Gloves",
+      "category": "armor",
+      "slot": "hands",
+      "description": "Enhanced gauntlets with precision actuators",
+      "base_stats": {
+        "HP": {
+          "type": "flat",
+          "T1": 20,
+          "T2": 30,
+          "T3": 40,
+          "T4": 50
+        },
+        "attack_speed": {
+          "type": "percent",
+          "T1": 2,
+          "T2": 4,
+          "T3": 6,
+          "T4": 8
+        }
+      },
+      "tier_names": {
+        "T1": "Fiber Grip",
+        "T2": "Augmentor Gloves",
+        "T3": "Neural Gauntlets",
+        "T4": "Singularity Claws"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "DEX": 12 },
+        "T3": { "level": 26, "DEX": 24 },
+        "T4": { "level": 41, "DEX": 40 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "crit_chance": 1.6,
+        "trans_attack": 1.5,
+        "basic_attack": 1.5,
+        "speed": 1.3
+      }
+    },
+    "pants": {
+      "code": "pants",
+      "name": "Pants",
+      "category": "armor",
+      "slot": "legs",
+      "description": "Armored leg plating with mobility systems",
+      "base_stats": {
+        "DEF": {
+          "type": "flat",
+          "T1": 25,
+          "T2": 40,
+          "T3": 55,
+          "T4": 70
+        },
+        "status_resist": {
+          "type": "percent",
+          "T1": 5,
+          "T2": 10,
+          "T3": 15,
+          "T4": 20
+        }
+      },
+      "tier_names": {
+        "T1": "Carbon Legwraps",
+        "T2": "Synth-Lattice Legs",
+        "T3": "Abyssal Frames",
+        "T4": "Genesis Casing"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "STR": 10, "DEX": 8 },
+        "T3": { "level": 26, "STR": 20, "DEX": 16 },
+        "T4": { "level": 41, "STR": 35, "DEX": 28 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "evasion": 1.6,
+        "speed": 1.4,
+        "trans_defense": 1.3,
+        "basic_defense": 1.3
+      }
+    },
+    "boots": {
+      "code": "boots",
+      "name": "Boots",
+      "category": "armor",
+      "slot": "feet",
+      "description": "Advanced footwear with propulsion enhancement",
+      "base_stats": {
+        "DEF": {
+          "type": "flat",
+          "T1": 20,
+          "T2": 35,
+          "T3": 50,
+          "T4": 65
+        },
+        "movement_speed": {
+          "type": "percent",
+          "T1": 3,
+          "T2": 6,
+          "T3": 9,
+          "T4": 12
+        }
+      },
+      "tier_names": {
+        "T1": "Kinetic Boots",
+        "T2": "Hover Treads",
+        "T3": "Ion Greaves",
+        "T4": "Warp Striders"
+      },
+      "requirements": {
+        "T1": { "level": 1 },
+        "T2": { "level": 11, "DEX": 12 },
+        "T3": { "level": 26, "DEX": 24 },
+        "T4": { "level": 41, "DEX": 40 }
+      },
+      "allowed_affixes": [
+        "hp",
+        "trans_attack",
+        "trans_defense",
+        "basic_attack",
+        "basic_defense",
+        "trans_charge_time",
+        "elemental_damage",
+        "trans_reset_percentage",
+        "endurance_threshold",
+        "plus_to_skill",
+        "specific_ability_cdr",
+        "speed",
+        "trans_speed",
+        "evasion",
+        "crit_chance",
+        "trans_duration_length",
+        "jump",
+        "thorns",
+        "damage_vs_elite",
+        "virus",
+        "endurance_percent",
+        "knockback",
+        "dash_cdr",
+        "plus_to_skill_other_class"
+      ],
+      "affix_weight_multipliers": {
+        "speed": 2.0,
+        "trans_speed": 1.7,
+        "evasion": 1.5,
+        "dash_cdr": 1.4,
+        "jump": 1.3
+      }
+    }
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "accessories": {
+    "mini_bots": {
+      "slot": "mini_bot",
+      "description": "Loyal mechanical companions that provide quality of life enhancements and unlock the Pet Sanctuary zone",
+      "note": "All mini bots unlock access to Pet Sanctuary. Each bot has unique utility effects.",
+      "bots": {
+        "tier_1": [
+          {
+            "code": "minibot_scrapper",
+            "name": "Scrapper",
+            "tier": "T1",
+            "rarity": "common",
+            "description": "A rusty little helper made from spare parts",
+            "effect": "Automatically picks up crafting materials within 5 meters",
+            "base_stats": {},
+            "requirements": {"level": 1}
+          },
+          {
+            "code": "minibot_sparky",
+            "name": "Sparky",
+            "tier": "T1",
+            "rarity": "common",
+            "description": "Constantly emits harmless electrical sparks",
+            "effect": "Leaves a trail of blue sparks behind you (cosmetic)",
+            "base_stats": {},
+            "requirements": {"level": 1}
+          },
+          {
+            "code": "minibot_clunker",
+            "name": "Clunker",
+            "tier": "T1",
+            "rarity": "common",
+            "description": "Makes adorable mechanical noises as it waddles",
+            "effect": "Plays random beeps and boops periodically",
+            "base_stats": {},
+            "requirements": {"level": 1}
+          },
+          {
+            "code": "minibot_rusty",
+            "name": "Rusty",
+            "tier": "T1",
+            "rarity": "common",
+            "description": "Old but loyal, leaves oil drips everywhere",
+            "effect": "Leaves small oil puddle trail (cosmetic, disappears after 3 seconds)",
+            "base_stats": {},
+            "requirements": {"level": 1}
+          }
+        ],
+        "tier_2": [
+          {
+            "code": "minibot_zippy",
+            "name": "Zippy",
+            "tier": "T2",
+            "rarity": "uncommon",
+            "description": "Fast-moving bot that zips around excitedly",
+            "effect": "Automatically picks up gold within 8 meters",
+            "base_stats": {},
+            "requirements": {"level": 15}
+          },
+          {
+            "code": "minibot_glowbug",
+            "name": "Glowbug",
+            "tier": "T2",
+            "rarity": "uncommon",
+            "description": "Emits a soft, pulsing glow",
+            "effect": "Provides ambient lighting around player (cosmetic, reveals dark areas)",
+            "base_stats": {},
+            "requirements": {"level": 15}
+          },
+          {
+            "code": "minibot_chatter",
+            "name": "Chatter",
+            "tier": "T2",
+            "rarity": "uncommon",
+            "description": "Repeats random voice lines in garbled robot speech",
+            "effect": "Occasionally says silly phrases in robotic voice",
+            "base_stats": {},
+            "requirements": {"level": 15}
+          },
+          {
+            "code": "minibot_disco",
+            "name": "Disco Ball",
+            "tier": "T2",
+            "rarity": "uncommon",
+            "description": "A spherical bot covered in reflective panels",
+            "effect": "Spins and reflects rainbow lights around you (cosmetic)",
+            "base_stats": {},
+            "requirements": {"level": 15}
+          },
+          {
+            "code": "minibot_porter",
+            "name": "Porter",
+            "tier": "T2",
+            "rarity": "uncommon",
+            "description": "Follows dutifully with a small cargo container",
+            "effect": "Increases inventory space by 5 slots",
+            "base_stats": {},
+            "requirements": {"level": 15}
+          }
+        ],
+        "tier_3": [
+          {
+            "code": "minibot_vacuum",
+            "name": "Vac-Bot",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Advanced collection bot with extended range",
+            "effect": "Automatically picks up all items (except equipment) within 12 meters",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          },
+          {
+            "code": "minibot_phoenix",
+            "name": "Phoenix Drone",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Leaves a trail of flickering flames",
+            "effect": "Creates a fire trail behind you (cosmetic, harmless flames)",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          },
+          {
+            "code": "minibot_hologram",
+            "name": "Holo-Buddy",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Projects holographic images around itself",
+            "effect": "Randomly displays holographic emotes above your head",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          },
+          {
+            "code": "minibot_mapper",
+            "name": "Scout-Bot",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Constantly scans the environment",
+            "effect": "Reveals nearby treasure chests on minimap",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          },
+          {
+            "code": "minibot_recycler",
+            "name": "Recycler",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Processes junk items into useful materials",
+            "effect": "Converts gray items into scrap materials automatically",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          },
+          {
+            "code": "minibot_musicbox",
+            "name": "Jukebox",
+            "tier": "T3",
+            "rarity": "rare",
+            "description": "Plays retro 8-bit music",
+            "effect": "Plays random chiptune music tracks while exploring",
+            "base_stats": {},
+            "requirements": {"level": 30}
+          }
+        ],
+        "tier_4": [
+          {
+            "code": "minibot_omnivac",
+            "name": "Omni-Vac",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "The ultimate collection bot",
+            "effect": "Automatically picks up ALL items within 15 meters and sorts them in inventory",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_rainbow",
+            "name": "Prism",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "Refracts light into beautiful patterns",
+            "effect": "Leaves a shimmering rainbow trail that cycles through all colors",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_dj",
+            "name": "DJ-Bot",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "Professional entertainment bot",
+            "effect": "Plays boss music during combat, chill beats during exploration",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_mimic",
+            "name": "Echo",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "Mimics your movements with a slight delay",
+            "effect": "Creates a holographic clone that mirrors your actions (cosmetic)",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_fortune",
+            "name": "Lucky",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "Covered in lucky charms and trinkets",
+            "effect": "Slightly increases chance of rare drops (does not stack with other luck bonuses)",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_wardrobe",
+            "name": "Fashion-Bot",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "Carries your alternate outfits",
+            "effect": "Allows you to save and swap between 3 cosmetic loadouts instantly",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          },
+          {
+            "code": "minibot_party",
+            "name": "Party Starter",
+            "tier": "T4",
+            "rarity": "legendary",
+            "description": "The life of any gathering",
+            "effect": "Creates fireworks, confetti, and party effects on kills",
+            "base_stats": {},
+            "requirements": {"level": 45}
+          }
+        ]
+      }
+    },
+    "augment_chips": {
+      "code": "augment_chip",
+      "name": "Augment Chip",
+      "category": "accessory",
+      "slot": "augment_chip",
+      "description": "Neural enhancement chips that provide powerful bonuses and unique abilities",
+      "base_stats": {
+        "skill_power": {
+          "type": "percent",
+          "T1": 3,
+          "T2": 5,
+          "T3": 8,
+          "T4": 12
+        },
+        "cooldown_reduction": {
+          "type": "percent",
+          "T1": 2,
+          "T2": 4,
+          "T3": 6,
+          "T4": 8
+        }
+      },
+      "tier_names": {
+        "T1": "Subroutine Chip",
+        "T2": "Daemon Core",
+        "T3": "Neural Nexus",
+        "T4": "Omega Kernel"
+      },
+      "requirements": {
+        "T1": {"level": 1},
+        "T2": {"level": 15},
+        "T3": {"level": 30},
+        "T4": {"level": 45}
+      },
+      "special_effects": [
+        {
+          "code": "chip_skill_points",
+          "name": "Skill Amplifier Chip",
+          "description": "Grants additional skill points",
+          "effect": "+1 Skill Point (T1-T2), +2 Skill Points (T3-T4)"
+        },
+        {
+          "code": "chip_cross_class",
+          "name": "Cross-Link Chip",
+          "description": "Grants access to another class's skill",
+          "effect": "Unlocks 1 skill from another class (tier determines skill level cap)"
+        },
+        {
+          "code": "chip_transform_duration",
+          "name": "Stasis Chip",
+          "description": "Doubles transformation duration",
+          "effect": "Transformation lasts 2x as long"
+        },
+        {
+          "code": "chip_no_resource",
+          "name": "Efficiency Chip",
+          "description": "Chance to cast skills for free",
+          "effect": "10% chance skills cost no resources (T1), up to 25% (T4)"
+        },
+        {
+          "code": "chip_duplicate_cast",
+          "name": "Echo Chamber Chip",
+          "description": "Chance to cast skills twice",
+          "effect": "5% chance to duplicate skill cast (T1), up to 15% (T4)"
+        },
+        {
+          "code": "chip_transform_type",
+          "name": "Morph Matrix Chip",
+          "description": "Transform into specific elite enemy type",
+          "effect": "Grants transformation into Boss/Elite form with unique abilities"
+        },
+        {
+          "code": "chip_passive_unlock",
+          "name": "Subroutine Chip",
+          "description": "Unlocks hidden passive ability slot",
+          "effect": "Gain 1 additional passive skill slot"
+        },
+        {
+          "code": "chip_ability_cdr",
+          "name": "Overclock Chip",
+          "description": "Drastically reduces cooldown of one specific ability",
+          "effect": "One chosen ability has 50% reduced cooldown"
+        }
+      ],
+      "allowed_affixes": ["trans_charge_time", "trans_reset_percentage", "plus_to_skill", "specific_ability_cdr", "trans_duration_length", "plus_to_skill_other_class", "dash_cdr"]
+    },
+    "wings": {
+      "code": "wings",
+      "name": "Wings",
+      "category": "accessory",
+      "slot": "wings",
+      "description": "Cosmetic flight systems that display your style",
+      "base_stats": {},
+      "tier_names": {
+        "T1": "Scrap Wings",
+        "T2": "Servo Wings",
+        "T3": "Plasma Flightframe",
+        "T4": "Celestial Ailerons"
+      },
+      "requirements": {
+        "T1": {"level": 1},
+        "T2": {"level": 15},
+        "T3": {"level": 30},
+        "T4": {"level": 45}
+      },
+      "allowed_affixes": ["jump"]
+    },
+    "neural_implant": {
+      "code": "neural_implant",
+      "name": "Neural Implant",
+      "category": "accessory",
+      "slot": "neural_implant",
+      "description": "Direct brain-computer interface for enhanced processing",
+      "base_stats": {
+        "XP_gain": {
+          "type": "percent",
+          "T1": 5,
+          "T2": 8,
+          "T3": 12,
+          "T4": 15
+        },
+        "resource_regen": {
+          "type": "percent",
+          "T1": 3,
+          "T2": 5,
+          "T3": 8,
+          "T4": 10
+        }
+      },
+      "tier_names": {
+        "T1": "Basic Neural Link",
+        "T2": "Synapse Accelerator",
+        "T3": "Quantum Processor",
+        "T4": "Transcendent Matrix"
+      },
+      "requirements": {
+        "T1": {"level": 1},
+        "T2": {"level": 15},
+        "T3": {"level": 30},
+        "T4": {"level": 45}
+      },
+      "allowed_affixes": ["hp", "trans_attack", "trans_defense", "basic_attack", "basic_defense", "trans_charge_time", "elemental_damage", "trans_reset_percentage", "endurance_threshold", "plus_to_skill", "specific_ability_cdr", "speed", "trans_speed", "evasion", "crit_chance", "trans_duration_length", "jump", "thorns", "damage_vs_elite", "virus", "endurance_percent", "knockback", "dash_cdr", "plus_to_skill_other_class"]
+    }
+  }
+}

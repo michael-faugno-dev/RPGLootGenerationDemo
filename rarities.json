@@ -1,0 +1,196 @@
+{
+  "rarities": [
+    {
+      "code": "normal",
+      "name": "Normal",
+      "display_color": "#FFFFFF",
+      "prefix_count": 0,
+      "suffix_count": 0,
+      "legendary_count": 0,
+      "base_stat_multiplier": 1.0,
+      "base_drop_weight": 100,
+      "potential_bonus": 0,
+      "description": "Basic items with no affixes",
+      "name_format": "{base_name}"
+    },
+    {
+      "code": "magic",
+      "name": "Magic",
+      "display_color": "#4169E1",
+      "prefix_count": 1,
+      "suffix_count": 1,
+      "legendary_count": 0,
+      "base_stat_multiplier": 1.1,
+      "base_drop_weight": 60,
+      "potential_bonus": 10,
+      "description": "Items with 1 prefix and 1 suffix",
+      "name_format": "{prefix} {base_name} {suffix}"
+    },
+    {
+      "code": "rare",
+      "name": "Rare",
+      "display_color": "#FFD700",
+      "prefix_count": 2,
+      "suffix_count": 2,
+      "legendary_count": 0,
+      "base_stat_multiplier": 1.2,
+      "base_drop_weight": 30,
+      "potential_bonus": 20,
+      "description": "Items with 2 prefixes and 2 suffixes",
+      "name_format": "{prefix} {base_name} {suffix}"
+    },
+    {
+      "code": "epic",
+      "name": "Epic",
+      "display_color": "#9370DB",
+      "prefix_count": 3,
+      "suffix_count": 2,
+      "legendary_count": 0,
+      "base_stat_multiplier": 1.3,
+      "base_drop_weight": 15,
+      "potential_bonus": 30,
+      "description": "Items with 3 prefixes and 2 suffixes",
+      "name_format": "{prefix} {base_name} {suffix}"
+    },
+    {
+      "code": "legendary",
+      "name": "Legendary",
+      "display_color": "#FF8C00",
+      "prefix_count": 3,
+      "suffix_count": 3,
+      "legendary_count": 1,
+      "base_stat_multiplier": 1.4,
+      "base_drop_weight": 5,
+      "potential_bonus": 0,
+      "can_be_crafted": false,
+      "description": "Handcrafted unique items with special legendary powers - Cannot be crafted on",
+      "is_handcrafted": true,
+      "name_format": "{unique_name}"
+    }
+  ],
+  "scaling_formulas": {
+    "zone_level_scaling": {
+      "description": "Higher zone levels increase chances of better rarity drops",
+      "formula": "adjusted_weight = base_drop_weight * (1 + zone_level * zone_multiplier)",
+      "zone_multiplier": 0.02,
+      "explanation": "Each zone level adds 2% to the drop weight of higher rarities",
+      "example": "Zone level 25: Magic weight becomes 60 * (1 + 25 * 0.02) = 60 * 1.5 = 90"
+    },
+    "monster_type_multipliers": {
+      "description": "Different monster types have different drop quality multipliers",
+      "multipliers": {
+        "normal": 1.0,
+        "elite": 1.5,
+        "champion": 2.0,
+        "mini_boss": 2.5,
+        "boss": 3.0,
+        "world_boss": 5.0
+      },
+      "explanation": "Monster multiplier is applied to rarity weights (higher = better drops)",
+      "example": "Boss killing: All rarity weights are multiplied by 3.0"
+    },
+    "monster_level_scaling": {
+      "description": "Monsters higher level than the player give better drops",
+      "formula": "level_bonus = 1 + max(0, (monster_level - player_level) * level_diff_multiplier)",
+      "level_diff_multiplier": 0.05,
+      "min_bonus": 1.0,
+      "max_bonus": 2.0,
+      "explanation": "Each level above player adds 5% bonus, capped at 100% (2x)",
+      "example": "Monster 10 levels higher: bonus = 1 + (10 * 0.05) = 1.5x"
+    },
+    "player_magic_find": {
+      "description": "Player's magic find stat increases rare drop chances",
+      "formula": "mf_multiplier = 1 + (magic_find_stat / 100)",
+      "explanation": "Magic Find stat directly increases rarity chances",
+      "example": "50% Magic Find: multiplier = 1.5x on all non-normal rarities"
+    }
+  },
+  "drop_calculation": {
+    "description": "Complete formula for calculating final drop weights",
+    "steps": [
+      "1. Start with base_drop_weight for each rarity",
+      "2. Apply zone_level_scaling: weight * (1 + zone_level * 0.02)",
+      "3. Apply monster_type_multiplier: weight * monster_multiplier",
+      "4. Apply monster_level_scaling: weight * level_bonus",
+      "5. Apply player_magic_find: weight * (1 + MF/100)",
+      "6. Sum all adjusted weights to get total weight pool",
+      "7. Roll random number and select rarity based on weight distribution"
+    ],
+    "complete_formula": "final_weight = base_drop_weight * (1 + zone_level * 0.02) * monster_type_mult * (1 + max(0, (mlvl - plvl) * 0.05)) * (1 + MF/100)",
+    "example_calculation": {
+      "scenario": "Player level 30 kills Elite (level 35) in Zone 25 with 50% Magic Find",
+      "magic_base_weight": 60,
+      "calculations": {
+        "zone_bonus": "1 + 25 * 0.02 = 1.5",
+        "monster_type": "1.5 (elite)",
+        "level_bonus": "1 + (35 - 30) * 0.05 = 1.25",
+        "magic_find": "1 + 50/100 = 1.5",
+        "final_weight": "60 * 1.5 * 1.5 * 1.25 * 1.5 = 253.125"
+      },
+      "interpretation": "Magic items are 4.2x more likely to drop in this scenario compared to base rates"
+    }
+  },
+  "rarity_probabilities": {
+    "description": "Example drop probabilities under different scenarios",
+    "base_rates": {
+      "description": "Level 1 player killing normal enemy in zone 1 with no magic find",
+      "normal": "100 / 210 = 47.6%",
+      "magic": "60 / 210 = 28.6%",
+      "rare": "30 / 210 = 14.3%",
+      "epic": "15 / 210 = 7.1%",
+      "legendary": "5 / 210 = 2.4%"
+    },
+    "endgame_rates": {
+      "description": "Level 50 player killing boss (level 55) in zone 50 with 100% magic find",
+      "calculations": {
+        "normal": "Base: 100, Scaled: ~100 (doesn't benefit much from bonuses)",
+        "magic": "Base: 60, Scaled: ~540",
+        "rare": "Base: 30, Scaled: ~270",
+        "epic": "Base: 15, Scaled: ~135",
+        "legendary": "Base: 5, Scaled: ~45"
+      },
+      "approximate_probabilities": {
+        "normal": "~9%",
+        "magic": "~49%",
+        "rare": "~25%",
+        "epic": "~12%",
+        "legendary": "~5%"
+      },
+      "note": "Endgame significantly shifts drop rates toward higher rarities"
+    }
+  },
+  "special_rules": {
+    "legendary_items": {
+      "description": "Legendary items are handcrafted uniques, not randomly generated",
+      "drop_behavior": "When 'legendary' rarity is rolled, game selects from unique_items.json based on player level and item type",
+      "no_affix_rolling": "Legendary items have fixed stats and do not use the normal affix system",
+      "cannot_be_crafted": "Legendary items have 0 potential and cannot be modified through crafting"
+    },
+    "guaranteed_drops": {
+      "description": "Certain sources guarantee minimum rarity",
+      "examples": {
+        "world_boss_first_kill": "Guaranteed Epic or Legendary",
+        "quest_rewards": "Guaranteed Rare or better",
+        "crafting": "Player controls rarity through materials"
+      }
+    },
+    "diminishing_returns": {
+      "description": "Magic Find has diminishing returns at high values",
+      "soft_cap": 200,
+      "formula_above_cap": "effective_MF = 200 + (MF - 200) * 0.5",
+      "explanation": "After 200% MF, each additional 1% only adds 0.5% effectiveness"
+    }
+  },
+  "potential_system": {
+    "description": "Potential is used for crafting items and is calculated from tier + rarity",
+    "formula": "total_potential = tier.base_potential + rarity.potential_bonus",
+    "examples": {
+      "T1_Normal": "20 + 0 = 20 potential",
+      "T2_Magic": "40 + 10 = 50 potential",
+      "T3_Rare": "60 + 20 = 80 potential",
+      "T4_Epic": "80 + 30 = 110 potential",
+      "T4_Legendary": "0 potential - Cannot be crafted"
+    },
+    "usage": "Potential is consumed when crafting (remove/add/reroll/upgrade affixes). See crafting_config.json for details."
+  }
+}

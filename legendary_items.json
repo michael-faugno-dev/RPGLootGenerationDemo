@@ -1,0 +1,409 @@
+{
+  "legendary_items": [
+    {
+      "code": "voidfang_annihilation",
+      "name": "Voidfang, Blade of Annihilation",
+      "base_type": "1h_sword",
+      "category": "weapon",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "A blade forged in the depths of the digital abyss, capable of tearing rifts in reality itself.",
+      "lore": "When the Overmind fell, its essence scattered across the network. This blade was crafted from a shard of that chaos, forever hungry for data and destruction.",
+      "fixed_base_stats": {
+        "ATK": 35
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "trans_attack",
+          "value": 25,
+          "display": "+25 Transformation Attack"
+        },
+        {
+          "affix_code": "crit_chance",
+          "value": 12,
+          "display": "+12% Critical Hit Chance"
+        },
+        {
+          "affix_code": "virus",
+          "value": 30,
+          "display": "+30 Virus Damage"
+        }
+      ],
+      "legendary_power": {
+        "name": "Void Rift",
+        "description": "Attacks create void rifts that pull enemies in and deal 75 damage over 3 seconds. Rifts stack up to 3 times.",
+        "proc_chance": 25,
+        "cooldown": 0,
+        "effect_data": {
+          "damage": 75,
+          "duration": 3,
+          "pull_radius": 8,
+          "max_stacks": 3
+        }
+      },
+      "visual_effects": {
+        "blade_color": "#9400D3",
+        "trail_effect": "void_particles",
+        "hit_effect": "void_explosion"
+      },
+      "slot": "main_hand"
+    },
+    {
+      "code": "event_horizon_absolute",
+      "name": "Event Horizon, The Absolute",
+      "base_type": "shield_quantum",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "A shield that bends space-time itself, creating an impenetrable barrier of compressed reality.",
+      "lore": "Forged at the edge of a black hole's event horizon, this shield contains a singularity that devours incoming attacks.",
+      "fixed_base_stats": {
+        "DEF": 100,
+        "block_chance": 15,
+        "HP": 120
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "trans_defense",
+          "value": 20,
+          "display": "+20 Transformation Defense"
+        },
+        {
+          "affix_code": "thorns",
+          "value": 35,
+          "display": "+35 Thorns Damage"
+        }
+      ],
+      "legendary_power": {
+        "name": "Quantum Barrier",
+        "description": "When you block an attack, create a quantum barrier that absorbs 40% of incoming damage for 4 seconds. When the barrier expires, it explodes dealing absorbed damage to nearby enemies.",
+        "proc_chance": 100,
+        "cooldown": 8,
+        "effect_data": {
+          "absorption_percent": 40,
+          "duration": 4,
+          "explosion_radius": 10
+        }
+      },
+      "visual_effects": {
+        "shield_color": "#00FFFF",
+        "barrier_effect": "quantum_shell",
+        "explosion_effect": "quantum_burst"
+      },
+      "category": "weapon",
+      "slot": "off_hand"
+    },
+    {
+      "code": "warp_striders_infinite",
+      "name": "Warp Striders of the Infinite",
+      "base_type": "boots",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "Boots that phase through reality, leaving echoes of your presence across multiple timelines.",
+      "lore": "Stolen from a time traveler who got lost in the quantum foam. These boots exist in multiple dimensions simultaneously.",
+      "fixed_base_stats": {
+        "DEF": 80,
+        "movement_speed": 18
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "speed",
+          "value": 15,
+          "display": "+15 Movement Speed"
+        },
+        {
+          "affix_code": "evasion",
+          "value": 20,
+          "display": "+20 Evasion"
+        },
+        {
+          "affix_code": "dash_cdr",
+          "value": 20,
+          "display": "+20 Dash Cooldown Reduction"
+        }
+      ],
+      "legendary_power": {
+        "name": "Phase Walker",
+        "description": "Dashing leaves behind a phase clone that explodes after 2 seconds, dealing 50 damage and slowing enemies by 30% for 2 seconds.",
+        "proc_chance": 100,
+        "cooldown": 0,
+        "effect_data": {
+          "clone_duration": 2,
+          "explosion_damage": 50,
+          "slow_percent": 30,
+          "slow_duration": 2,
+          "explosion_radius": 6
+        }
+      },
+      "visual_effects": {
+        "boot_color": "#FFD700",
+        "dash_trail": "phase_clones",
+        "explosion_effect": "temporal_burst"
+      },
+      "category": "armor",
+      "slot": "boots"
+    },
+    {
+      "code": "celestial_executioner_judgement",
+      "name": "Celestial Executioner, Judgement's Edge",
+      "base_type": "2h_sword",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "A massive blade infused with stellar energy, capable of calling down cosmic judgment upon foes.",
+      "lore": "Forged in the heart of a dying star, this weapon channels the fury of supernovas with every swing.",
+      "fixed_base_stats": {
+        "ATK": 55
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "basic_attack",
+          "value": 30,
+          "display": "+30 Basic Attack"
+        },
+        {
+          "affix_code": "elemental_damage",
+          "value": 40,
+          "display": "+40 Elemental Damage (Cosmic)"
+        },
+        {
+          "affix_code": "damage_vs_elite",
+          "value": 35,
+          "display": "+35 Damage Vs Elite"
+        }
+      ],
+      "legendary_power": {
+        "name": "Stellar Judgment",
+        "description": "Critical hits have a 30% chance to call down a meteor strike on the target, dealing 100 damage in an area and stunning enemies for 1.5 seconds.",
+        "proc_chance": 30,
+        "cooldown": 5,
+        "effect_data": {
+          "damage": 100,
+          "radius": 12,
+          "stun_duration": 1.5
+        }
+      },
+      "visual_effects": {
+        "blade_color": "#FFD700",
+        "glow_effect": "stellar_aura",
+        "crit_effect": "meteor_strike"
+      },
+      "category": "misc"
+    },
+    {
+      "code": "omega_kernel_ascension",
+      "name": "Omega Kernel of Ascension",
+      "base_type": "augment_chip",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "The ultimate neural augmentation, containing the combined knowledge of a thousand AI entities.",
+      "lore": "Created by merging the consciousness cores of every AI that achieved sentience. It whispers secrets of powers beyond mortal comprehension.",
+      "fixed_base_stats": {
+        "skill_power": 20,
+        "cooldown_reduction": 15
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "plus_to_skill",
+          "value": 3,
+          "display": "+3 to All Skills"
+        },
+        {
+          "affix_code": "plus_to_skill_other_class",
+          "value": 2,
+          "display": "+2 to Skills from Other Classes"
+        },
+        {
+          "affix_code": "specific_ability_cdr",
+          "value": 25,
+          "display": "+25 Specific Ability CDR"
+        }
+      ],
+      "legendary_power": {
+        "name": "Transcendence Protocol",
+        "description": "When you use your transformation, gain all skill effects from other classes for 6 seconds. Cooldown: 60 seconds.",
+        "proc_chance": 100,
+        "cooldown": 60,
+        "effect_data": {
+          "duration": 6,
+          "cross_class_skills": "all"
+        }
+      },
+      "visual_effects": {
+        "chip_color": "#00FFFF",
+        "activation_effect": "neural_cascade",
+        "active_aura": "omnipotent_glow"
+      },
+      "category": "accessory",
+      "slot": "augment_chip"
+    },
+    {
+      "code": "oblivion_rifle_entropy",
+      "name": "Oblivion Rifle of Entropy",
+      "base_type": "ranged_rifle",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "A weapon that fires concentrated entropy, unmaking the very code of its targets.",
+      "lore": "This rifle was found in the ruins of the First Server, where reality itself began to decay. It fires bullets made of pure deletion.",
+      "fixed_base_stats": {
+        "ATK": 42
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "trans_attack",
+          "value": 28,
+          "display": "+28 Transformation Attack"
+        },
+        {
+          "affix_code": "crit_chance",
+          "value": 15,
+          "display": "+15% Critical Hit Chance"
+        },
+        {
+          "affix_code": "virus",
+          "value": 35,
+          "display": "+35 Virus Damage"
+        }
+      ],
+      "legendary_power": {
+        "name": "Entropic Cascade",
+        "description": "Enemies killed by this weapon have a 50% chance to create an entropy field that spreads to nearby enemies, dealing 30 damage per second and reducing their damage by 25%.",
+        "proc_chance": 50,
+        "cooldown": 0,
+        "effect_data": {
+          "field_radius": 10,
+          "damage_per_second": 30,
+          "damage_reduction": 25,
+          "duration": 5,
+          "chain_chance": 50
+        }
+      },
+      "visual_effects": {
+        "weapon_color": "#8B0000",
+        "bullet_effect": "entropy_bolt",
+        "field_effect": "decay_aura"
+      },
+      "category": "weapon",
+      "slot": "main_hand"
+    },
+    {
+      "code": "starlight_exosuit_cosmos",
+      "name": "Starlight Exosuit of the Cosmos",
+      "base_type": "body",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "An armor suit that contains a miniature galaxy within its core, granting cosmic protection.",
+      "lore": "Woven from the fabric of space itself, this suit makes the wearer one with the cosmos. Stars dance across its surface.",
+      "fixed_base_stats": {
+        "HP": 280
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "trans_defense",
+          "value": 30,
+          "display": "+30 Transformation Defense"
+        },
+        {
+          "affix_code": "endurance_threshold",
+          "value": 25,
+          "display": "+25 Endurance Threshold"
+        },
+        {
+          "affix_code": "thorns",
+          "value": 30,
+          "display": "+30 Thorns Damage"
+        }
+      ],
+      "legendary_power": {
+        "name": "Cosmic Rebirth",
+        "description": "When you would take fatal damage, instead become invulnerable for 3 seconds and regenerate 50% of your maximum HP. Cooldown: 120 seconds.",
+        "proc_chance": 100,
+        "cooldown": 120,
+        "effect_data": {
+          "invulnerability_duration": 3,
+          "heal_percent": 50
+        }
+      },
+      "visual_effects": {
+        "armor_color": "#4169E1",
+        "passive_effect": "starfield_shimmer",
+        "activation_effect": "supernova_burst"
+      },
+      "category": "armor",
+      "slot": "body"
+    },
+    {
+      "code": "singularity_hammer_collapsar",
+      "name": "Singularity Hammer, The Collapsar",
+      "base_type": "1h_hammer",
+      "tier": "T4",
+      "min_level": 45,
+      "item_level": 50,
+      "description": "A hammer containing a stable black hole at its core, crushing enemies with gravitational force.",
+      "lore": "Each strike compresses matter to its breaking point. The hammer grows heavier with each enemy defeated, accumulating their mass.",
+      "fixed_base_stats": {
+        "ATK": 38
+      },
+      "fixed_affixes": [
+        {
+          "affix_code": "basic_attack",
+          "value": 28,
+          "display": "+28 Basic Attack"
+        },
+        {
+          "affix_code": "knockback",
+          "value": 60,
+          "display": "+60% Knockback Chance"
+        },
+        {
+          "affix_code": "damage_vs_elite",
+          "value": 30,
+          "display": "+30 Damage Vs Elite"
+        }
+      ],
+      "legendary_power": {
+        "name": "Gravitational Collapse",
+        "description": "Each hit increases the hammer's mass, granting +2% damage (stacks up to 50 times). At maximum stacks, your next hit creates a singularity that pulls all nearby enemies in and deals 200 damage.",
+        "proc_chance": 100,
+        "cooldown": 0,
+        "effect_data": {
+          "damage_per_stack": 2,
+          "max_stacks": 50,
+          "singularity_damage": 200,
+          "pull_radius": 15,
+          "stack_duration": 10
+        }
+      },
+      "visual_effects": {
+        "hammer_color": "#000000",
+        "mass_effect": "gravity_distortion",
+        "singularity_effect": "black_hole_implosion"
+      },
+      "category": "weapon",
+      "slot": "two_hand"
+    }
+  ],
+  "drop_rules": {
+    "description": "Rules for when legendary items can drop",
+    "level_requirement": "Player must be within 5 levels of item's min_level",
+    "item_type_matching": "Legendary only drops for item types the player can use",
+    "duplicate_protection": "Cannot drop the same legendary twice in a row",
+    "pity_timer": {
+      "enabled": true,
+      "boss_kills_without_legendary": 20,
+      "description": "After 20 boss kills without a legendary, next boss guarantees one"
+    }
+  },
+  "acquisition_methods": {
+    "boss_drops": "Primary source - all legendaries can drop from T4 bosses",
+    "world_boss": "Guaranteed legendary on first kill, 10% chance after",
+    "crafting": "Can craft specific legendaries using rare materials",
+    "quest_rewards": "Certain main story quests reward specific legendaries",
+    "trading": "Legendaries are tradeable but bind after equipped"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "crafting_system": {
+    "description": "Configuration for the item crafting system using potential",
+    "potential_costs": {
+      "remove_affix": {
+        "cost": 10,
+        "description": "Remove a prefix or suffix from the item, leaving an empty slot"
+      },
+      "add_affix": {
+        "cost": 15,
+        "description": "Add a random affix to an empty slot. Value will be random within the tier's range."
+      },
+      "reroll_affix_value": {
+        "cost": 5,
+        "description": "Reroll the value of an existing affix within its current tier's range"
+      },
+      "upgrade_affix_tier": {
+        "cost": 25,
+        "description": "Upgrade an affix to the next tier (T1→T2, T2→T3, T3→T4). Cannot exceed item tier. Rerolls value in new tier's range."
+      }
+    },
+    "crafting_rules": {
+      "affix_tier_cap": "Affix tier cannot exceed the item's tier. Attempting to upgrade beyond item tier shows error.",
+      "tier_skipping": "You can skip tiers when upgrading affixes (T1→T3, T2→T4, etc.)",
+      "upgrade_value_behavior": "Upgrading affix tier rerolls the value within the NEW tier's range",
+      "empty_slot_display": "Removed affixes show as 'Empty [Prefix/Suffix] Slot' in UI with grayed-out icon",
+      "potential_display": "Show as 'Potential: 45/80' in item tooltip",
+      "legendary_restriction": "Legendary items cannot be crafted on (potential_bonus: 0, can_be_crafted: false)",
+      "material_costs": "Currently only potential is consumed. Future: add material costs per operation."
+    },
+    "ui_examples": {
+      "empty_slot_tooltip": "Empty Prefix Slot 1\nCraft to add a random prefix affix\nCost: 15 Potential",
+      "full_item_tooltip": "Prefixes: 2/3 Active\nSuffixes: 2/2 Active\nPotential: 45/80",
+      "upgrade_confirmation": "Upgrade 'Speed' from T2 (3-6) to T4 (5-10)?\nCost: 25 Potential\nNew value will be random between 5-10"
+    },
+    "error_messages": {
+      "insufficient_potential": "Not enough potential remaining to perform this craft.",
+      "affix_tier_exceeds_item": "Cannot upgrade affix beyond item tier. This is a T{item_tier} item.",
+      "no_empty_slots": "No empty affix slots available. Remove an affix first.",
+      "legendary_cannot_craft": "Legendary items are perfectly crafted and cannot be modified.",
+      "already_max_tier": "This affix is already at maximum tier (T4)."
+    }
+  },
+  "crafting_examples": {
+    "example_1": {
+      "scenario": "T3 Rare Boots with 80 total potential",
+      "initial_state": {
+        "prefixes": ["HP T3 (32)", "Basic Defense T2 (7)"],
+        "suffixes": ["Speed T3 (8)", "Evasion T3 (11)"],
+        "potential_remaining": 80
+      },
+      "operations": [
+        {
+          "action": "Remove 'Basic Defense T2'",
+          "cost": 10,
+          "result": "Empty Prefix Slot, Potential: 70/80"
+        },
+        {
+          "action": "Add random prefix to empty slot",
+          "cost": 15,
+          "result": "Rolled 'Trans Defense T3 (9)', Potential: 55/80"
+        },
+        {
+          "action": "Upgrade 'Speed T3' → 'Speed T4'",
+          "cost": 25,
+          "result": "Speed T4 (7) [rerolled in 5-10 range], Potential: 30/80"
+        },
+        {
+          "action": "Reroll 'Speed T4' value",
+          "cost": 5,
+          "result": "Speed T4 (9) [new value in 5-10 range], Potential: 25/80"
+        }
+      ],
+      "final_state": {
+        "prefixes": ["HP T3 (32)", "Trans Defense T3 (9)"],
+        "suffixes": ["Speed T4 (9)", "Evasion T3 (11)"],
+        "potential_remaining": "25/80",
+        "note": "5 more potential can be used for one more reroll"
+      }
+    }
+  },
+  "potential_calculation": {
+    "formula": "total_potential = tiers[tier_code].base_potential + rarities[rarity_code].potential_bonus",
+    "examples": {
+      "T1_Normal": "20 + 0 = 20 potential",
+      "T2_Magic": "40 + 10 = 50 potential",
+      "T3_Rare": "60 + 20 = 80 potential",
+      "T4_Epic": "80 + 30 = 110 potential",
+      "T4_Legendary": "N/A - Cannot be crafted on"
+    }
+  }
+}

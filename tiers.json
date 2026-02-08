@@ -1,0 +1,81 @@
+{
+  "tiers": [
+    {
+      "code": "T1",
+      "name": "Basic",
+      "display_name": "Tier 1",
+      "min_level": 1,
+      "max_level": 10,
+      "base_potential": 20,
+      "base_drop_weight": 100,
+      "description": "Entry-level equipment for beginning your journey",
+      "color": "#808080"
+    },
+    {
+      "code": "T2",
+      "name": "Advanced",
+      "display_name": "Tier 2",
+      "min_level": 11,
+      "max_level": 25,
+      "base_potential": 40,
+      "base_drop_weight": 150,
+      "description": "Improved gear for progressing through mid-level content",
+      "color": "#4169E1"
+    },
+    {
+      "code": "T3",
+      "name": "Superior",
+      "display_name": "Tier 3",
+      "min_level": 26,
+      "max_level": 40,
+      "base_potential": 60,
+      "base_drop_weight": 200,
+      "description": "High-quality equipment for challenging encounters",
+      "color": "#9370DB"
+    },
+    {
+      "code": "T4",
+      "name": "Elite",
+      "display_name": "Tier 4",
+      "min_level": 41,
+      "max_level": 999,
+      "base_potential": 80,
+      "base_drop_weight": 250,
+      "description": "Top-tier endgame equipment with maximum power",
+      "color": "#FFD700"
+    }
+  ],
+  "level_to_tier_mapping": {
+    "description": "Quick lookup for determining tier from item level",
+    "1-10": "T1",
+    "11-25": "T2",
+    "26-40": "T3",
+    "41+": "T4"
+  },
+  "potential_calculation": {
+    "formula": "total_potential = tier.base_potential + rarity.potential_bonus",
+    "example": "T3 Rare item = 60 (T3 base) + 20 (Rare bonus) = 80 total potential"
+  },
+  "drop_weight_info": {
+    "description": "Controls how often each tier drops when player is eligible for multiple tiers",
+    "formula": "Higher base_drop_weight = more likely to drop",
+    "current_weights": {
+      "T1": 100,
+      "T2": 150,
+      "T3": 200,
+      "T4": 250
+    },
+    "example_at_level_45": {
+      "total_weight": 700,
+      "T1_chance": "14.3% (100/700)",
+      "T2_chance": "21.4% (150/700)",
+      "T3_chance": "28.6% (200/700)",
+      "T4_chance": "35.7% (250/700)"
+    },
+    "tuning_guide": {
+      "equal_chance": "Set all to same value (e.g., 100, 100, 100, 100)",
+      "favor_higher_tiers": "Increase higher tier values (e.g., 50, 100, 200, 400)",
+      "more_balanced": "Closer values (e.g., 100, 120, 140, 160)"
+    }
+  }
+}

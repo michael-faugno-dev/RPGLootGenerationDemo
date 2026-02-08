@@ -1,0 +1,674 @@
+{
+  "weapons": {
+    "one_hand": [
+      {
+        "code": "1h_sword",
+        "name": "1 Hand Sword",
+        "category": "weapon",
+        "weapon_class": "1h",
+        "slot": "main_hand",
+        "description": "Balanced energy blade for swift combat",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 10,
+            "T2": 15,
+            "T3": 20,
+            "T4": 25
+          }
+        },
+        "tier_names": {
+          "T1": "Plasma Cutter",
+          "T2": "Photon Blade",
+          "T3": "Quantum Edge",
+          "T4": "Void Katana"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11},
+          "T3": { "level": 26},
+          "T4": { "level": 41}
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "crit_chance": 1.5,
+          "speed": 1.4,
+          "trans_speed": 1.3,
+          "basic_attack": 1.2
+        }
+      },
+      {
+        "code": "1h_hammer",
+        "name": "1 Hand Hammer",
+        "category": "weapon",
+        "weapon_class": "1h",
+        "slot": "main_hand",
+        "description": "Heavy striking tool with kinetic impact",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 10,
+            "T2": 15,
+            "T3": 20,
+            "T4": 25
+          }
+        },
+        "tier_names": {
+          "T1": "Piston Striker",
+          "T2": "Servo Crusher",
+          "T3": "Graviton Maul",
+          "T4": "Singularity Hammer"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 20, "DEX": 5 },
+          "T3": { "level": 26, "STR": 40, "DEX": 10 },
+          "T4": { "level": 41, "STR": 65, "DEX": 15 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "knockback": 2.0,
+          "basic_attack": 1.5,
+          "trans_attack": 1.3,
+          "speed": 0.7
+        }
+      },
+      {
+        "code": "1h_mace",
+        "name": "1 Hand Mace",
+        "category": "weapon",
+        "weapon_class": "1h",
+        "slot": "main_hand",
+        "description": "Reinforced bludgeon for crushing force",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 10,
+            "T2": 15,
+            "T3": 20,
+            "T4": 25
+          }
+        },
+        "tier_names": {
+          "T1": "Steel Baton",
+          "T2": "Shock Mace",
+          "T3": "Ion Scepter",
+          "T4": "Antimatter Rod"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 18, "DEX": 8 },
+          "T3": { "level": 26, "STR": 35, "DEX": 15 },
+          "T4": { "level": 41, "STR": 55, "DEX": 25 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "elemental_damage": 1.5,
+          "basic_attack": 1.3,
+          "knockback": 1.4
+        }
+      },
+      {
+        "code": "1h_axe",
+        "name": "1 Hand Axe",
+        "category": "weapon",
+        "weapon_class": "1h",
+        "slot": "main_hand",
+        "description": "Sharp cleaving weapon with lethal edge",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 10,
+            "T2": 15,
+            "T3": 20,
+            "T4": 25
+          }
+        },
+        "tier_names": {
+          "T1": "Ripper Hatchet",
+          "T2": "Chainlink Cleaver",
+          "T3": "Thermal Splitter",
+          "T4": "Eclipse Reaver"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 16, "DEX": 12 },
+          "T3": { "level": 26, "STR": 32, "DEX": 24 },
+          "T4": { "level": 41, "STR": 52, "DEX": 38 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "crit_chance": 1.6,
+          "damage_vs_elite": 1.4,
+          "basic_attack": 1.3
+        }
+      }
+    ],
+    "two_hand": [
+      {
+        "code": "2h_sword",
+        "name": "2 Hand Sword",
+        "category": "weapon",
+        "weapon_class": "2h",
+        "slot": "two_hand",
+        "description": "Massive energy blade for devastating strikes",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 15,
+            "T2": 23,
+            "T3": 31,
+            "T4": 39
+          }
+        },
+        "tier_names": {
+          "T1": "Charged Claymore",
+          "T2": "Nano Greatsword",
+          "T3": "Fusion Blade",
+          "T4": "Celestial Executioner"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 25 },
+          "T3": { "level": 26, "STR": 45 },
+          "T4": { "level": 41, "STR": 70 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "basic_attack": 1.6,
+          "trans_attack": 1.5,
+          "crit_chance": 1.3,
+          "speed": 0.8
+        }
+      },
+      {
+        "code": "2h_hammer",
+        "name": "2 Hand Hammer",
+        "category": "weapon",
+        "weapon_class": "2h",
+        "slot": "two_hand",
+        "description": "Colossal impact weapon with seismic force",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 15,
+            "T2": 23,
+            "T3": 31,
+            "T4": 39
+          }
+        },
+        "tier_names": {
+          "T1": "Hydraulic Sledge",
+          "T2": "Tremor Breaker",
+          "T3": "Meteor Crusher",
+          "T4": "World Ender"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 30 },
+          "T3": { "level": 26, "STR": 55 },
+          "T4": { "level": 41, "STR": 85 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "knockback": 2.5,
+          "basic_attack": 1.7,
+          "trans_attack": 1.4,
+          "speed": 0.6,
+          "crit_chance": 0.8
+        }
+      },
+      {
+        "code": "2h_axe",
+        "name": "2 Hand Axe",
+        "category": "weapon",
+        "weapon_class": "2h",
+        "slot": "two_hand",
+        "description": "Heavy cleaving weapon for brutal attacks",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 15,
+            "T2": 23,
+            "T3": 31,
+            "T4": 39
+          }
+        },
+        "tier_names": {
+          "T1": "Scrap Hewer",
+          "T2": "Circuit Splitter",
+          "T3": "Graviton Carver",
+          "T4": "Starfall Executioner"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 28 },
+          "T3": { "level": 26, "STR": 50 },
+          "T4": { "level": 41, "STR": 75 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "crit_chance": 1.8,
+          "damage_vs_elite": 1.6,
+          "basic_attack": 1.5,
+          "knockback": 1.3
+        }
+      }
+    ],
+    "ranged": [
+      {
+        "code": "ranged_blaster",
+        "name": "Blaster",
+        "category": "weapon",
+        "weapon_class": "ranged",
+        "slot": "main_hand",
+        "description": "Rapid-fire energy weapon for sustained damage",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 12,
+            "T2": 18,
+            "T3": 24,
+            "T4": 30
+          }
+        },
+        "tier_names": {
+          "T1": "Pulse Pistol",
+          "T2": "Rapid Ionizer",
+          "T3": "Plasma Repeater",
+          "T4": "Voidstream Blaster"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "DEX": 20 },
+          "T3": { "level": 26, "DEX": 40 },
+          "T4": { "level": 41, "DEX": 65 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "speed": 1.7,
+          "trans_speed": 1.5,
+          "virus": 1.4,
+          "basic_attack": 1.3
+        }
+      },
+      {
+        "code": "ranged_rifle",
+        "name": "Rifle",
+        "category": "weapon",
+        "weapon_class": "ranged",
+        "slot": "main_hand",
+        "description": "Precision weapon for accurate long-range shots",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 12,
+            "T2": 18,
+            "T3": 24,
+            "T4": 30
+          }
+        },
+        "tier_names": {
+          "T1": "Bolt Carbine",
+          "T2": "Smart Rifle",
+          "T3": "Cryo Marksman",
+          "T4": "Oblivion Sniper"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "DEX": 18, "STR": 8 },
+          "T3": { "level": 26, "DEX": 36, "STR": 16 },
+          "T4": { "level": 41, "DEX": 58, "STR": 26 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "crit_chance": 2.0,
+          "damage_vs_elite": 1.6,
+          "virus": 1.4,
+          "basic_attack": 1.2
+        }
+      },
+      {
+        "code": "ranged_cannon",
+        "name": "Cannon",
+        "category": "weapon",
+        "weapon_class": "ranged",
+        "slot": "main_hand",
+        "description": "Heavy weapon for explosive area damage",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 12,
+            "T2": 18,
+            "T3": 24,
+            "T4": 30
+          }
+        },
+        "tier_names": {
+          "T1": "Charge Cannon",
+          "T2": "Arc Projector",
+          "T3": "Fusion Howitzer",
+          "T4": "Supernova Destructor"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 15, "DEX": 12 },
+          "T3": { "level": 26, "STR": 30, "DEX": 24 },
+          "T4": { "level": 41, "STR": 48, "DEX": 38 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "elemental_damage": 1.8,
+          "knockback": 1.5,
+          "basic_attack": 1.4,
+          "speed": 0.7
+        }
+      },
+      {
+        "code": "ranged_launcher",
+        "name": "Launcher",
+        "category": "weapon",
+        "weapon_class": "ranged",
+        "slot": "main_hand",
+        "description": "Projectile weapon for explosive payloads",
+        "base_stats": {
+          "ATK": {
+            "type": "flat",
+            "T1": 12,
+            "T2": 18,
+            "T3": 24,
+            "T4": 30
+          }
+        },
+        "tier_names": {
+          "T1": "Grenade Tube",
+          "T2": "Missile Pod",
+          "T3": "Quantum Mortar",
+          "T4": "Apocalypse Launcher"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 12, "DEX": 15 },
+          "T3": { "level": 26, "STR": 24, "DEX": 30 },
+          "T4": { "level": 41, "STR": 38, "DEX": 48 }
+        },
+        "allowed_affixes": [
+          "trans_attack",
+          "basic_attack",
+          "elemental_damage",
+          "trans_speed",
+          "crit_chance",
+          "damage_vs_elite",
+          "virus",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "elemental_damage": 1.7,
+          "damage_vs_elite": 1.5,
+          "knockback": 1.4,
+          "virus": 1.3
+        }
+      }
+    ],
+    "shields": [
+      {
+        "code": "shield_phase",
+        "name": "Phase Shield",
+        "category": "weapon",
+        "weapon_class": "shield",
+        "slot": "off_hand",
+        "description": "Energy barrier focused on mobility and evasion",
+        "base_stats": {
+          "DEF": {
+            "type": "flat",
+            "T1": 30,
+            "T2": 45,
+            "T3": 60,
+            "T4": 75
+          },
+          "block_chance": {
+            "type": "percent",
+            "T1": 3,
+            "T2": 6,
+            "T3": 9,
+            "T4": 12
+          },
+          "movement_speed": {
+            "type": "percent",
+            "T1": 2,
+            "T2": 4,
+            "T3": 6,
+            "T4": 8
+          }
+        },
+        "tier_names": {
+          "T1": "Flicker Barrier",
+          "T2": "Phase Wall",
+          "T3": "Warp Aegis",
+          "T4": "Dimensional Guard"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 15 },
+          "T3": { "level": 26, "STR": 30 },
+          "T4": { "level": 41, "STR": 50 }
+        },
+        "allowed_affixes": [
+          "trans_defense",
+          "basic_defense",
+          "endurance_threshold",
+          "evasion",
+          "thorns",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "evasion": 1.8,
+          "speed": 1.5,
+          "trans_defense": 1.3
+        }
+      },
+      {
+        "code": "shield_photon",
+        "name": "Photon Shield",
+        "category": "weapon",
+        "weapon_class": "shield",
+        "slot": "off_hand",
+        "description": "Hard-light construct prioritizing maximum defense",
+        "base_stats": {
+          "DEF": {
+            "type": "flat",
+            "T1": 35,
+            "T2": 52,
+            "T3": 70,
+            "T4": 88
+          },
+          "block_chance": {
+            "type": "percent",
+            "T1": 3,
+            "T2": 6,
+            "T3": 9,
+            "T4": 12
+          },
+          "damage_reduction": {
+            "type": "percent",
+            "T1": 2,
+            "T2": 3,
+            "T3": 4,
+            "T4": 5
+          }
+        },
+        "tier_names": {
+          "T1": "Light Buckler",
+          "T2": "Photon Barrier",
+          "T3": "Radiant Bulwark",
+          "T4": "Stellar Fortress"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 20 },
+          "T3": { "level": 26, "STR": 40 },
+          "T4": { "level": 41, "STR": 65 }
+        },
+        "allowed_affixes": [
+          "trans_defense",
+          "basic_defense",
+          "endurance_threshold",
+          "evasion",
+          "thorns",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "basic_defense": 1.8,
+          "trans_defense": 1.6,
+          "endurance_threshold": 1.5
+        }
+      },
+      {
+        "code": "shield_quantum",
+        "name": "Quantum Shield",
+        "category": "weapon",
+        "weapon_class": "shield",
+        "slot": "off_hand",
+        "description": "Reality-bending barrier with enhanced vitality",
+        "base_stats": {
+          "DEF": {
+            "type": "flat",
+            "T1": 30,
+            "T2": 45,
+            "T3": 60,
+            "T4": 75
+          },
+          "block_chance": {
+            "type": "percent",
+            "T1": 3,
+            "T2": 6,
+            "T3": 9,
+            "T4": 12
+          },
+          "HP": {
+            "type": "flat",
+            "T1": 25,
+            "T2": 40,
+            "T3": 60,
+            "T4": 85
+          }
+        },
+        "tier_names": {
+          "T1": "Nano Plate",
+          "T2": "Quantum Shield",
+          "T3": "Singularity Guard",
+          "T4": "Event Horizon"
+        },
+        "requirements": {
+          "T1": { "level": 1 },
+          "T2": { "level": 11, "STR": 18 },
+          "T3": { "level": 26, "STR": 35 },
+          "T4": { "level": 41, "STR": 55 }
+        },
+        "allowed_affixes": [
+          "trans_defense",
+          "basic_defense",
+          "endurance_threshold",
+          "evasion",
+          "thorns",
+          "knockback"
+        ],
+        "affix_weight_multipliers": {
+          "thorns": 1.7,
+          "basic_defense": 1.4,
+          "endurance_threshold": 1.5
+        }
+      }
+    ]
+  }
+}

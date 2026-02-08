@@ -1,0 +1,1455 @@
+{
+  "affixes": [
+    {
+      "code": "hp",
+      "name": "HP",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 10,
+      "tags": ["defensive"],
+      "description": "Increases maximum hit points",
+      "epithets": {
+        "T1": "Vital",
+        "T2": "Core Neural",
+        "T3": "Matrix Bioframe",
+        "T4": "Immortal Core"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "shoulder": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 12, "max": 24},
+          "T3": {"min": 16, "max": 32},
+          "T4": {"min": 20, "max": 40}
+        },
+        "body": {
+          "T1": {"min": 15, "max": 30},
+          "T2": {"min": 25, "max": 50},
+          "T3": {"min": 35, "max": 70},
+          "T4": {"min": 50, "max": 100}
+        },
+        "gloves": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 8, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 13, "max": 25}
+        },
+        "pants": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 12, "max": 24},
+          "T3": {"min": 16, "max": 32},
+          "T4": {"min": 20, "max": 40}
+        },
+        "boots": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 8, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 13, "max": 25}
+        }
+      },
+      "weight_overrides": {
+        "body": 15,
+        "helmet": 12
+      }
+    },
+    {
+      "code": "trans_attack",
+      "name": "Trans Attack",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["offensive", "transformation"],
+      "description": "Increases attack damage while transformed",
+      "epithets": {
+        "T1": "Overdrive",
+        "T2": "Burstfire",
+        "T3": "Nanostrike",
+        "T4": "Quantum Surge"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_hammer": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_mace": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_axe": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "2h_sword": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "2h_hammer": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "2h_axe": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        }
+      }
+    },
+    {
+      "code": "trans_defense",
+      "name": "Trans Defense",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["defensive", "transformation"],
+      "description": "Increases defense while transformed",
+      "epithets": {
+        "T1": "Firewall",
+        "T2": "Bulwark Node",
+        "T3": "Aegis Grid",
+        "T4": "Quantum Bastion"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shoulder": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "body": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 14},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 24}
+        },
+        "pants": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "boots": {
+          "T1": {"min": 2, "max": 5},
+          "T2": {"min": 3, "max": 7},
+          "T3": {"min": 5, "max": 10},
+          "T4": {"min": 6, "max": 12}
+        },
+        "shield_phase": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shield_photon": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shield_quantum": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        }
+      }
+    },
+    {
+      "code": "basic_attack",
+      "name": "Basic Attack",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 10,
+      "tags": ["offensive"],
+      "description": "Increases basic attack damage",
+      "epithets": {
+        "T1": "Keen",
+        "T2": "Edge Pulse",
+        "T3": "Blade Plasma",
+        "T4": "Edge Photon Cutter"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_hammer": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_mace": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "1h_axe": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "2h_sword": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "2h_hammer": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "2h_axe": {
+          "T1": {"min": 6, "max": 12},
+          "T2": {"min": 9, "max": 18},
+          "T3": {"min": 12, "max": 24},
+          "T4": {"min": 15, "max": 30}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        }
+      },
+      "weight_overrides": {
+        "1h_sword": 12,
+        "2h_sword": 12
+      }
+    },
+    {
+      "code": "basic_defense",
+      "name": "Basic Defense",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 10,
+      "tags": ["defensive"],
+      "description": "Increases basic defense",
+      "epithets": {
+        "T1": "Reinforced",
+        "T2": "Alloy Frame",
+        "T3": "Titanium Guard",
+        "T4": "Adamantine Shield"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shoulder": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "body": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 14},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 24}
+        },
+        "pants": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "boots": {
+          "T1": {"min": 2, "max": 5},
+          "T2": {"min": 3, "max": 7},
+          "T3": {"min": 5, "max": 10},
+          "T4": {"min": 6, "max": 12}
+        },
+        "shield_phase": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shield_photon": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 16},
+          "T4": {"min": 10, "max": 20}
+        },
+        "shield_quantum": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        }
+      },
+      "weight_overrides": {
+        "body": 12,
+        "shield_photon": 15
+      }
+    },
+    {
+      "code": "trans_charge_time",
+      "name": "Trans Charge Time",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 6,
+      "tags": ["transformation", "utility"],
+      "description": "Reduces transformation charge time",
+      "epithets": {
+        "T1": "Quickboot",
+        "T2": "Overclock",
+        "T3": "Nanoclock",
+        "T4": "Singularity Sync"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 1, "max": 2},
+          "T2": {"min": 1, "max": 3},
+          "T3": {"min": 2, "max": 4},
+          "T4": {"min": 2, "max": 5}
+        },
+        "shoulder": {
+          "T1": {"min": 1, "max": 2},
+          "T2": {"min": 1, "max": 3},
+          "T3": {"min": 2, "max": 4},
+          "T4": {"min": 2, "max": 5}
+        },
+        "augment_chip": {
+          "T1": {"min": 1, "max": 2},
+          "T2": {"min": 1, "max": 3},
+          "T3": {"min": 2, "max": 4},
+          "T4": {"min": 2, "max": 5}
+        }
+      }
+    },
+    {
+      "code": "elemental_damage",
+      "name": "Elemental Damage",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["offensive", "elemental"],
+      "description": "Adds elemental damage to attacks",
+      "epithets": {
+        "T1": "Ionic",
+        "T2": "Cryo",
+        "T3": "Thermal Quantum",
+        "T4": "Radiant"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_hammer": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_mace": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_axe": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "2h_sword": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_hammer": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_axe": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        }
+      }
+    },
+    {
+      "code": "trans_reset_percentage",
+      "name": "Trans Reset Percentage",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 5,
+      "tags": ["transformation", "utility"],
+      "description": "Chance to reset transformation cooldown",
+      "epithets": {
+        "T1": "Reboot",
+        "T2": "Rollback",
+        "T3": "Failsafe",
+        "T4": "System Restore"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 2, "max": 5},
+          "T2": {"min": 3, "max": 7},
+          "T3": {"min": 4, "max": 10},
+          "T4": {"min": 5, "max": 12}
+        },
+        "shoulder": {
+          "T1": {"min": 2, "max": 5},
+          "T2": {"min": 3, "max": 7},
+          "T3": {"min": 4, "max": 10},
+          "T4": {"min": 5, "max": 12}
+        },
+        "augment_chip": {
+          "T1": {"min": 2, "max": 5},
+          "T2": {"min": 3, "max": 7},
+          "T3": {"min": 4, "max": 10},
+          "T4": {"min": 5, "max": 12}
+        }
+      }
+    },
+    {
+      "code": "endurance_threshold",
+      "name": "Endurance Threshold",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 7,
+      "tags": ["defensive"],
+      "description": "Increases maximum endurance threshold",
+      "epithets": {
+        "T1": "Stalwart",
+        "T2": "Unyielding",
+        "T3": "Enduric Node",
+        "T4": "Iron Protocol"
+      },
+      "spawn_ranges": {
+        "body": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 18},
+          "T4": {"min": 12, "max": 22}
+        },
+        "pants": {
+          "T1": {"min": 4, "max": 8},
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 8, "max": 15},
+          "T4": {"min": 10, "max": 18}
+        },
+        "shield_phase": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 18},
+          "T4": {"min": 12, "max": 22}
+        },
+        "shield_photon": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 18},
+          "T4": {"min": 12, "max": 22}
+        },
+        "shield_quantum": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 18},
+          "T4": {"min": 12, "max": 22}
+        }
+      }
+    },
+    {
+      "code": "plus_to_skill",
+      "name": "Plus To Skill",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 3,
+      "tags": ["utility"],
+      "description": "Increases skill level (only on T3+ items)",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": "Arcane Protocol Daemon",
+        "T4": "Kernel Cyber Daemon Sovereign AI"
+      },
+      "spawn_ranges": {
+        "augment_chip": {
+          "T1": null,
+          "T2": null,
+          "T3": {"min": 1, "max": 1},
+          "T4": {"min": 1, "max": 2}
+        }
+      }
+    },
+    {
+      "code": "specific_ability_cdr",
+      "name": "Specific Ability CDR",
+      "kind": "prefix",
+      "type": "flat",
+      "base_weight": 6,
+      "tags": ["utility"],
+      "description": "Reduces cooldown of specific ability (only on T2+ items)",
+      "epithets": {
+        "T1": null,
+        "T2": "Threaded Parallel",
+        "T3": "Asynchronous",
+        "T4": "Quantum Thread"
+      },
+      "spawn_ranges": {
+        "augment_chip": {
+          "T1": null,
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 7, "max": 15},
+          "T4": {"min": 8, "max": 18}
+        },
+        "helmet": {
+          "T1": null,
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 7, "max": 15},
+          "T4": {"min": 8, "max": 18}
+        },
+        "gloves": {
+          "T1": null,
+          "T2": {"min": 6, "max": 12},
+          "T3": {"min": 7, "max": 15},
+          "T4": {"min": 8, "max": 18}
+        }
+      }
+    },
+    {
+      "code": "speed",
+      "name": "Speed",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 10,
+      "tags": ["utility", "movement"],
+      "description": "Increases movement speed",
+      "epithets": {
+        "T1": "of Velocity",
+        "T2": "of Streamline",
+        "T3": "of Warpdrive",
+        "T4": "of Lightspeed"
+      },
+      "spawn_ranges": {
+        "boots": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        }
+      },
+      "weight_overrides": {
+        "boots": 15
+      }
+    },
+    {
+      "code": "trans_speed",
+      "name": "Trans Speed",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["transformation", "utility"],
+      "description": "Increases attack speed while transformed",
+      "epithets": {
+        "T1": "of Overclock",
+        "T2": "of Pingburst",
+        "T3": "of Datastream",
+        "T4": "of Hyperthreading"
+      },
+      "spawn_ranges": {
+        "gloves": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_sword": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_hammer": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_mace": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_axe": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_sword": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_hammer": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_axe": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        }
+      }
+    },
+    {
+      "code": "evasion",
+      "name": "Evasion",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["defensive", "utility"],
+      "description": "Increases dodge chance",
+      "epithets": {
+        "T1": "of Drift",
+        "T2": "of Sync",
+        "T3": "of Ghoststep",
+        "T4": "of Phase Shift"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shoulder": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "pants": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "boots": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        }
+      }
+    },
+    {
+      "code": "crit_chance",
+      "name": "Critical Chance",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 9,
+      "tags": ["offensive"],
+      "description": "Increases critical hit chance",
+      "epithets": {
+        "T1": "of Focus",
+        "T2": "of Precision",
+        "T3": "of Exploit",
+        "T4": "of Critical Cascade"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_hammer": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_mace": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "1h_axe": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_sword": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_hammer": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "2h_axe": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        },
+        "gloves": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        }
+      },
+      "weight_overrides": {
+        "ranged_rifle": 12
+      }
+    },
+    {
+      "code": "trans_duration_length",
+      "name": "Trans Duration Length",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 7,
+      "tags": ["transformation"],
+      "description": "Increases transformation duration",
+      "epithets": {
+        "T1": "of Persistence",
+        "T2": "of Sustain",
+        "T3": "of Prolongation",
+        "T4": "of Continuum"
+      },
+      "spawn_ranges": {
+        "helmet": {
+          "T1": {"min": 3, "max": 5},
+          "T2": {"min": 4, "max": 7},
+          "T3": {"min": 6, "max": 10},
+          "T4": {"min": 7, "max": 12}
+        },
+        "shoulder": {
+          "T1": {"min": 3, "max": 5},
+          "T2": {"min": 4, "max": 7},
+          "T3": {"min": 6, "max": 10},
+          "T4": {"min": 7, "max": 12}
+        },
+        "augment_chip": {
+          "T1": {"min": 3, "max": 5},
+          "T2": {"min": 4, "max": 7},
+          "T3": {"min": 6, "max": 10},
+          "T4": {"min": 7, "max": 12}
+        }
+      }
+    },
+    {
+      "code": "jump",
+      "name": "Jump",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 6,
+      "tags": ["utility", "movement"],
+      "description": "Increases jump height",
+      "epithets": {
+        "T1": "of Spring",
+        "T2": "of Thrusters",
+        "T3": "of Grav Boost",
+        "T4": "of Antigrav"
+      },
+      "spawn_ranges": {
+        "boots": {
+          "T1": {"min": 1, "max": 3},
+          "T2": {"min": 2, "max": 4},
+          "T3": {"min": 2, "max": 6},
+          "T4": {"min": 3, "max": 7}
+        },
+        "wings": {
+          "T1": {"min": 2, "max": 4},
+          "T2": {"min": 3, "max": 6},
+          "T3": {"min": 4, "max": 8},
+          "T4": {"min": 5, "max": 10}
+        }
+      },
+      "weight_overrides": {
+        "wings": 15
+      }
+    },
+    {
+      "code": "thorns",
+      "name": "Thorns",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 7,
+      "tags": ["defensive"],
+      "description": "Reflects damage back to attackers",
+      "epithets": {
+        "T1": "of Feedback",
+        "T2": "of Spikes",
+        "T3": "of Countermesh",
+        "T4": "of Reflective Matrix"
+      },
+      "spawn_ranges": {
+        "shield_phase": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "shield_photon": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "shield_quantum": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "body": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "shoulder": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        }
+      }
+    },
+    {
+      "code": "damage_vs_elite",
+      "name": "Damage Vs Elite",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["offensive"],
+      "description": "Increases damage against elite enemies",
+      "epithets": {
+        "T1": "of Hunter",
+        "T2": "of Predator",
+        "T3": "of Executioner",
+        "T4": "of Annihilator"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_hammer": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_mace": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_axe": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "2h_sword": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_hammer": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_axe": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "gloves": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        }
+      }
+    },
+    {
+      "code": "virus",
+      "name": "Virus",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 7,
+      "tags": ["offensive", "elemental"],
+      "description": "Applies damage over time effect",
+      "epithets": {
+        "T1": "of Infection",
+        "T2": "of Virus",
+        "T3": "of Nanovirus",
+        "T4": "of Black ICE"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_hammer": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_mace": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "1h_axe": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "2h_sword": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_hammer": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "2h_axe": {
+          "T1": {"min": 8, "max": 16},
+          "T2": {"min": 11, "max": 23},
+          "T3": {"min": 15, "max": 30},
+          "T4": {"min": 18, "max": 38}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 5, "max": 10},
+          "T2": {"min": 7, "max": 15},
+          "T3": {"min": 10, "max": 20},
+          "T4": {"min": 12, "max": 25}
+        }
+      }
+    },
+    {
+      "code": "endurance_percent",
+      "name": "Endurance Percent",
+      "kind": "suffix",
+      "type": "percent",
+      "base_weight": 7,
+      "tags": ["defensive"],
+      "description": "Increases endurance regeneration rate",
+      "epithets": {
+        "T1": "of Integrity",
+        "T2": "of Kernel",
+        "T3": "of Redundancy",
+        "T4": "of Eternal Frame"
+      },
+      "spawn_ranges": {
+        "body": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "helmet": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "shoulder": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "pants": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        }
+      }
+    },
+    {
+      "code": "knockback",
+      "name": "Knockback",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 6,
+      "tags": ["offensive", "utility"],
+      "description": "Chance to knock enemies back",
+      "epithets": {
+        "T1": "of Impact",
+        "T2": "of Forcewave",
+        "T3": "of Repulsor",
+        "T4": "of Graviton Blast"
+      },
+      "spawn_ranges": {
+        "1h_sword": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "1h_hammer": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "1h_mace": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "1h_axe": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "2h_sword": {
+          "T1": {"min": 15, "max": 30},
+          "T2": {"min": 23, "max": 45},
+          "T3": {"min": 30, "max": 60},
+          "T4": {"min": 38, "max": 75}
+        },
+        "2h_hammer": {
+          "T1": {"min": 15, "max": 30},
+          "T2": {"min": 23, "max": 45},
+          "T3": {"min": 30, "max": 60},
+          "T4": {"min": 38, "max": 75}
+        },
+        "2h_axe": {
+          "T1": {"min": 15, "max": 30},
+          "T2": {"min": 23, "max": 45},
+          "T3": {"min": 30, "max": 60},
+          "T4": {"min": 38, "max": 75}
+        },
+        "ranged_blaster": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "ranged_rifle": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "ranged_cannon": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "ranged_launcher": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "shield_phase": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "shield_photon": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        },
+        "shield_quantum": {
+          "T1": {"min": 10, "max": 20},
+          "T2": {"min": 15, "max": 30},
+          "T3": {"min": 20, "max": 40},
+          "T4": {"min": 25, "max": 50}
+        }
+      },
+      "weight_overrides": {
+        "1h_hammer": 12,
+        "2h_hammer": 12
+      }
+    },
+    {
+      "code": "dash_cdr",
+      "name": "Dash CDR",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 8,
+      "tags": ["utility", "movement"],
+      "description": "Reduces dash cooldown",
+      "epithets": {
+        "T1": "of Sprint",
+        "T2": "of Dashdrive",
+        "T3": "of Warpstep",
+        "T4": "of Blink"
+      },
+      "spawn_ranges": {
+        "boots": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        },
+        "augment_chip": {
+          "T1": {"min": 3, "max": 6},
+          "T2": {"min": 4, "max": 9},
+          "T3": {"min": 6, "max": 12},
+          "T4": {"min": 7, "max": 15}
+        }
+      }
+    },
+    {
+      "code": "plus_to_skill_other_class",
+      "name": "Plus To Skill Other Class",
+      "kind": "suffix",
+      "type": "flat",
+      "base_weight": 3,
+      "tags": ["utility"],
+      "description": "Grants skill from another class (only on T3+ items)",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": "of Adaptation Emulation",
+        "T4": "of Crosslink Omni-Link"
+      },
+      "spawn_ranges": {
+        "augment_chip": {
+          "T1": null,
+          "T2": null,
+          "T3": {"min": 1, "max": 2},
+          "T4": {"min": 1, "max": 2}
+        }
+      }
+    },
+    {
+      "code": "legendary_void_rift",
+      "name": "Void Rift",
+      "kind": "legendary",
+      "type": "special",
+      "base_weight": 1,
+      "tags": ["legendary", "offensive", "void"],
+      "description": "Attacks create void rifts that pull enemies in and deal massive damage",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": null,
+        "T4": "Void Rift"
+      },
+      "spawn_ranges": {
+        "legendary_only": {
+          "T4": {"min": 50, "max": 100}
+        }
+      }
+    },
+    {
+      "code": "legendary_time_fracture",
+      "name": "Time Fracture",
+      "kind": "legendary",
+      "type": "special",
+      "base_weight": 1,
+      "tags": ["legendary", "utility", "time"],
+      "description": "Critical hits have a chance to create temporal anomalies that freeze enemies in time",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": null,
+        "T4": "Time Fracture"
+      },
+      "spawn_ranges": {
+        "legendary_only": {
+          "T4": {"min": 15, "max": 25}
+        }
+      }
+    },
+    {
+      "code": "legendary_quantum_shield",
+      "name": "Quantum Shield",
+      "kind": "legendary",
+      "type": "special",
+      "base_weight": 1,
+      "tags": ["legendary", "defensive", "quantum"],
+      "description": "When hit, creates a quantum barrier that absorbs damage and explodes outward",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": null,
+        "T4": "Quantum Shield"
+      },
+      "spawn_ranges": {
+        "legendary_only": {
+          "T4": {"min": 30, "max": 50}
+        }
+      }
+    },
+    {
+      "code": "legendary_nano_swarm",
+      "name": "Nano Swarm",
+      "kind": "legendary",
+      "type": "special",
+      "base_weight": 1,
+      "tags": ["legendary", "offensive", "nano"],
+      "description": "Defeated enemies release nano-bots that seek out and damage nearby foes",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": null,
+        "T4": "Nano Swarm"
+      },
+      "spawn_ranges": {
+        "legendary_only": {
+          "T4": {"min": 25, "max": 40}
+        }
+      }
+    },
+    {
+      "code": "legendary_phase_walker",
+      "name": "Phase Walker",
+      "kind": "legendary",
+      "type": "special",
+      "base_weight": 1,
+      "tags": ["legendary", "utility", "phase"],
+      "description": "Dashing leaves behind a phase clone that explodes after 2 seconds",
+      "epithets": {
+        "T1": null,
+        "T2": null,
+        "T3": null,
+        "T4": "Phase Walker"
+      },
+      "spawn_ranges": {
+        "legendary_only": {
+          "T4": {"min": 35, "max": 60}
+        }
+      }
+    }
+  ]
+}

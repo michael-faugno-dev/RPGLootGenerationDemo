@@ -1,0 +1,659 @@
+{
+  "items": {
+    "currency": [
+      {
+        "code": "gold",
+        "name": "Credits",
+        "category": "currency",
+        "description": "Standard digital currency used throughout the network",
+        "icon": "currency_credits",
+        "max_stack": 999999999,
+        "can_trade": true,
+        "vendor_price": null
+      },
+      {
+        "code": "premium_currency",
+        "name": "Quantum Tokens",
+        "category": "currency",
+        "description": "Premium currency obtained through special events or purchases",
+        "icon": "currency_quantum",
+        "max_stack": 999999,
+        "can_trade": false,
+        "vendor_price": null
+      },
+      {
+        "code": "crafting_shards",
+        "name": "Data Shards",
+        "category": "currency",
+        "description": "Specialized currency used for crafting and upgrading",
+        "icon": "currency_shards",
+        "max_stack": 9999,
+        "can_trade": true,
+        "vendor_price": null
+      }
+    ],
+    "health_potions": [
+      {
+        "code": "health_potion_minor",
+        "name": "Minor Health Pack",
+        "category": "consumable",
+        "subcategory": "healing",
+        "tier": 1,
+        "description": "Restores a small amount of health",
+        "icon": "potion_health_minor",
+        "effect": {
+          "type": "instant_heal",
+          "value": 50,
+          "value_type": "flat"
+        },
+        "max_stack": 99,
+        "cooldown": 5,
+        "cooldown_category": "healing",
+        "level_requirement": 1,
+        "vendor_buy_price": 10,
+        "vendor_sell_price": 2,
+        "can_trade": true
+      },
+      {
+        "code": "health_potion_standard",
+        "name": "Standard Health Pack",
+        "category": "consumable",
+        "subcategory": "healing",
+        "tier": 2,
+        "description": "Restores a moderate amount of health",
+        "icon": "potion_health_standard",
+        "effect": {
+          "type": "instant_heal",
+          "value": 150,
+          "value_type": "flat"
+        },
+        "max_stack": 99,
+        "cooldown": 5,
+        "cooldown_category": "healing",
+        "level_requirement": 10,
+        "vendor_buy_price": 50,
+        "vendor_sell_price": 10,
+        "can_trade": true
+      },
+      {
+        "code": "health_potion_greater",
+        "name": "Greater Health Pack",
+        "category": "consumable",
+        "subcategory": "healing",
+        "tier": 3,
+        "description": "Restores a large amount of health",
+        "icon": "potion_health_greater",
+        "effect": {
+          "type": "instant_heal",
+          "value": 300,
+          "value_type": "flat"
+        },
+        "max_stack": 99,
+        "cooldown": 5,
+        "cooldown_category": "healing",
+        "level_requirement": 25,
+        "vendor_buy_price": 150,
+        "vendor_sell_price": 30,
+        "can_trade": true
+      },
+      {
+        "code": "health_potion_supreme",
+        "name": "Supreme Health Pack",
+        "category": "consumable",
+        "subcategory": "healing",
+        "tier": 4,
+        "description": "Restores massive health and removes minor debuffs",
+        "icon": "potion_health_supreme",
+        "effect": {
+          "type": "instant_heal",
+          "value": 600,
+          "value_type": "flat",
+          "removes_debuffs": true
+        },
+        "max_stack": 99,
+        "cooldown": 5,
+        "cooldown_category": "healing",
+        "level_requirement": 40,
+        "vendor_buy_price": 500,
+        "vendor_sell_price": 100,
+        "can_trade": true
+      }
+    ],
+    "resource_potions": [
+      {
+        "code": "energy_potion_minor",
+        "name": "Minor Energy Cell",
+        "category": "consumable",
+        "subcategory": "resource",
+        "tier": 1,
+        "description": "Restores a small amount of energy/resource",
+        "icon": "potion_energy_minor",
+        "effect": {
+          "type": "instant_resource",
+          "value": 30,
+          "value_type": "percent"
+        },
+        "max_stack": 99,
+        "cooldown": 8,
+        "cooldown_category": "resource",
+        "level_requirement": 1,
+        "vendor_buy_price": 15,
+        "vendor_sell_price": 3,
+        "can_trade": true
+      },
+      {
+        "code": "energy_potion_greater",
+        "name": "Greater Energy Cell",
+        "category": "consumable",
+        "subcategory": "resource",
+        "tier": 3,
+        "description": "Restores a large amount of energy/resource",
+        "icon": "potion_energy_greater",
+        "effect": {
+          "type": "instant_resource",
+          "value": 60,
+          "value_type": "percent"
+        },
+        "max_stack": 99,
+        "cooldown": 8,
+        "cooldown_category": "resource",
+        "level_requirement": 25,
+        "vendor_buy_price": 200,
+        "vendor_sell_price": 40,
+        "can_trade": true
+      }
+    ],
+    "buff_potions": [
+      {
+        "code": "attack_boost_potion",
+        "name": "Combat Stimulant",
+        "category": "consumable",
+        "subcategory": "buff",
+        "tier": 2,
+        "description": "Increases attack damage by 20% for 5 minutes",
+        "icon": "potion_attack",
+        "effect": {
+          "type": "buff",
+          "stat": "attack",
+          "value": 20,
+          "value_type": "percent",
+          "duration": 300
+        },
+        "max_stack": 50,
+        "cooldown": 0,
+        "level_requirement": 15,
+        "vendor_buy_price": 100,
+        "vendor_sell_price": 20,
+        "can_trade": true
+      },
+      {
+        "code": "defense_boost_potion",
+        "name": "Defensive Nanites",
+        "category": "consumable",
+        "subcategory": "buff",
+        "tier": 2,
+        "description": "Increases defense by 25% for 5 minutes",
+        "icon": "potion_defense",
+        "effect": {
+          "type": "buff",
+          "stat": "defense",
+          "value": 25,
+          "value_type": "percent",
+          "duration": 300
+        },
+        "max_stack": 50,
+        "cooldown": 0,
+        "level_requirement": 15,
+        "vendor_buy_price": 100,
+        "vendor_sell_price": 20,
+        "can_trade": true
+      },
+      {
+        "code": "speed_boost_potion",
+        "name": "Velocity Injection",
+        "category": "consumable",
+        "subcategory": "buff",
+        "tier": 2,
+        "description": "Increases movement speed by 30% for 3 minutes",
+        "icon": "potion_speed",
+        "effect": {
+          "type": "buff",
+          "stat": "movement_speed",
+          "value": 30,
+          "value_type": "percent",
+          "duration": 180
+        },
+        "max_stack": 50,
+        "cooldown": 0,
+        "level_requirement": 10,
+        "vendor_buy_price": 75,
+        "vendor_sell_price": 15,
+        "can_trade": true
+      },
+      {
+        "code": "xp_boost_potion",
+        "name": "Knowledge Serum",
+        "category": "consumable",
+        "subcategory": "buff",
+        "tier": 3,
+        "description": "Increases experience gain by 50% for 30 minutes",
+        "icon": "potion_xp",
+        "effect": {
+          "type": "buff",
+          "stat": "xp_gain",
+          "value": 50,
+          "value_type": "percent",
+          "duration": 1800
+        },
+        "max_stack": 20,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_buy_price": 500,
+        "vendor_sell_price": 100,
+        "can_trade": true
+      },
+      {
+        "code": "magic_find_potion",
+        "name": "Fortune Essence",
+        "category": "consumable",
+        "subcategory": "buff",
+        "tier": 3,
+        "description": "Increases magic find by 25% for 15 minutes",
+        "icon": "potion_mf",
+        "effect": {
+          "type": "buff",
+          "stat": "magic_find",
+          "value": 25,
+          "value_type": "percent",
+          "duration": 900
+        },
+        "max_stack": 20,
+        "cooldown": 0,
+        "level_requirement": 20,
+        "vendor_buy_price": 300,
+        "vendor_sell_price": 60,
+        "can_trade": true
+      }
+    ],
+    "utility_consumables": [
+      {
+        "code": "town_portal_scroll",
+        "name": "Emergency Beacon",
+        "category": "consumable",
+        "subcategory": "utility",
+        "tier": 1,
+        "description": "Opens a portal to return to the nearest safe zone",
+        "icon": "scroll_portal",
+        "effect": {
+          "type": "teleport",
+          "destination": "town"
+        },
+        "max_stack": 50,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_buy_price": 20,
+        "vendor_sell_price": 4,
+        "can_trade": true
+      },
+      {
+        "code": "identify_scroll",
+        "name": "Data Scanner",
+        "category": "consumable",
+        "subcategory": "utility",
+        "tier": 1,
+        "description": "Reveals the properties of an unidentified item",
+        "icon": "scroll_identify",
+        "effect": {
+          "type": "identify_item"
+        },
+        "max_stack": 99,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_buy_price": 5,
+        "vendor_sell_price": 1,
+        "can_trade": true,
+        "note": "Only needed if you implement unidentified items"
+      },
+      {
+        "code": "respec_token",
+        "name": "Neural Reset Module",
+        "category": "consumable",
+        "subcategory": "utility",
+        "tier": 4,
+        "description": "Allows you to reset all skill points and redistribute them",
+        "icon": "token_respec",
+        "effect": {
+          "type": "reset_skills"
+        },
+        "max_stack": 10,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_buy_price": 10000,
+        "vendor_sell_price": 2000,
+        "can_trade": false
+      },
+      {
+        "code": "transform_extender",
+        "name": "Overdrive Catalyst",
+        "category": "consumable",
+        "subcategory": "utility",
+        "tier": 3,
+        "description": "Doubles transformation duration for your next transformation",
+        "icon": "catalyst_transform",
+        "effect": {
+          "type": "buff",
+          "stat": "transform_duration_multiplier",
+          "value": 100,
+          "value_type": "percent",
+          "duration": 600,
+          "one_use_trigger": true
+        },
+        "max_stack": 20,
+        "cooldown": 0,
+        "level_requirement": 20,
+        "vendor_buy_price": 250,
+        "vendor_sell_price": 50,
+        "can_trade": true
+      }
+    ],
+    "crafting_materials": {
+      "tier_1": [
+        {
+          "code": "scrap_metal",
+          "name": "Scrap Metal",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 1,
+          "description": "Common salvaged metal parts",
+          "icon": "material_scrap",
+          "max_stack": 999,
+          "vendor_sell_price": 1,
+          "can_trade": true
+        },
+        {
+          "code": "circuit_fragment",
+          "name": "Circuit Fragment",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 1,
+          "description": "Damaged circuit boards from destroyed bots",
+          "icon": "material_circuit",
+          "max_stack": 999,
+          "vendor_sell_price": 2,
+          "can_trade": true
+        },
+        {
+          "code": "corrupted_data",
+          "name": "Corrupted Data",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 1,
+          "description": "Fragments of damaged code",
+          "icon": "material_data",
+          "max_stack": 999,
+          "vendor_sell_price": 1,
+          "can_trade": true
+        }
+      ],
+      "tier_2": [
+        {
+          "code": "refined_alloy",
+          "name": "Refined Alloy",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 2,
+          "description": "Processed metal suitable for quality equipment",
+          "icon": "material_alloy",
+          "max_stack": 500,
+          "vendor_sell_price": 5,
+          "can_trade": true
+        },
+        {
+          "code": "neural_core",
+          "name": "Neural Core",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 2,
+          "description": "Processing core from advanced enemies",
+          "icon": "material_neural",
+          "max_stack": 500,
+          "vendor_sell_price": 8,
+          "can_trade": true
+        },
+        {
+          "code": "encoded_matrix",
+          "name": "Encoded Matrix",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 2,
+          "description": "Stable data structures with potential",
+          "icon": "material_matrix",
+          "max_stack": 500,
+          "vendor_sell_price": 6,
+          "can_trade": true
+        }
+      ],
+      "tier_3": [
+        {
+          "code": "plasma_core",
+          "name": "Plasma Core",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 3,
+          "description": "Concentrated energy core from elite enemies",
+          "icon": "material_plasma",
+          "max_stack": 250,
+          "vendor_sell_price": 20,
+          "can_trade": true
+        },
+        {
+          "code": "quantum_shard",
+          "name": "Quantum Shard",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 3,
+          "description": "Fragment of quantum-entangled matter",
+          "icon": "material_quantum",
+          "max_stack": 250,
+          "vendor_sell_price": 25,
+          "can_trade": true
+        },
+        {
+          "code": "algorithmic_essence",
+          "name": "Algorithmic Essence",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 3,
+          "description": "Pure distilled code from powerful AIs",
+          "icon": "material_essence",
+          "max_stack": 250,
+          "vendor_sell_price": 18,
+          "can_trade": true
+        }
+      ],
+      "tier_4": [
+        {
+          "code": "void_crystal",
+          "name": "Void Crystal",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 4,
+          "description": "Crystallized essence from the digital void",
+          "icon": "material_void",
+          "max_stack": 100,
+          "vendor_sell_price": 100,
+          "can_trade": true
+        },
+        {
+          "code": "stellar_fragment",
+          "name": "Stellar Fragment",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 4,
+          "description": "Piece of a collapsed digital star",
+          "icon": "material_stellar",
+          "max_stack": 100,
+          "vendor_sell_price": 120,
+          "can_trade": true
+        },
+        {
+          "code": "omnimind_core",
+          "name": "Omnimind Core",
+          "category": "material",
+          "subcategory": "crafting",
+          "tier": 4,
+          "description": "Core from a sentient AI overseer",
+          "icon": "material_omnimind",
+          "max_stack": 100,
+          "vendor_sell_price": 150,
+          "can_trade": true
+        }
+      ]
+    },
+    "special_items": [
+      {
+        "code": "rift_key_minor",
+        "name": "Minor Rift Key",
+        "category": "consumable",
+        "subcategory": "key",
+        "tier": 2,
+        "description": "Opens a portal to a minor challenge rift",
+        "icon": "key_rift_minor",
+        "effect": {
+          "type": "open_dungeon",
+          "dungeon_type": "minor_rift"
+        },
+        "max_stack": 20,
+        "cooldown": 0,
+        "level_requirement": 15,
+        "vendor_sell_price": 50,
+        "can_trade": true
+      },
+      {
+        "code": "rift_key_greater",
+        "name": "Greater Rift Key",
+        "category": "consumable",
+        "subcategory": "key",
+        "tier": 4,
+        "description": "Opens a portal to a greater challenge rift with superior rewards",
+        "icon": "key_rift_greater",
+        "effect": {
+          "type": "open_dungeon",
+          "dungeon_type": "greater_rift"
+        },
+        "max_stack": 10,
+        "cooldown": 0,
+        "level_requirement": 35,
+        "vendor_sell_price": 200,
+        "can_trade": true
+      },
+      {
+        "code": "pet_summon_scroll",
+        "name": "Pet Beacon",
+        "category": "consumable",
+        "subcategory": "pet",
+        "tier": 3,
+        "description": "Summons a random mini bot companion",
+        "icon": "scroll_pet",
+        "effect": {
+          "type": "grant_random_pet",
+          "pet_tier": "random"
+        },
+        "max_stack": 10,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_sell_price": 500,
+        "can_trade": true
+      },
+      {
+        "code": "cosmetic_dye",
+        "name": "Chromatic Dye",
+        "category": "consumable",
+        "subcategory": "cosmetic",
+        "tier": 2,
+        "description": "Changes the color of an equipped item (cosmetic only)",
+        "icon": "dye_random",
+        "effect": {
+          "type": "apply_cosmetic",
+          "cosmetic_type": "color_change"
+        },
+        "max_stack": 99,
+        "cooldown": 0,
+        "level_requirement": 1,
+        "vendor_buy_price": 100,
+        "vendor_sell_price": 20,
+        "can_trade": true
+      }
+    ],
+    "recipes": [
+      {
+        "code": "recipe_health_potion_greater",
+        "name": "Recipe: Greater Health Pack",
+        "category": "recipe",
+        "subcategory": "consumable",
+        "tier": 2,
+        "description": "Teaches you how to craft Greater Health Packs",
+        "icon": "recipe_scroll",
+        "effect": {
+          "type": "unlock_recipe",
+          "recipe_id": "craft_health_potion_greater"
+        },
+        "max_stack": 1,
+        "consumed_on_use": true,
+        "level_requirement": 20,
+        "vendor_sell_price": 100,
+        "can_trade": true
+      },
+      {
+        "code": "recipe_legendary_weapon",
+        "name": "Schematic: Voidfang",
+        "category": "recipe",
+        "subcategory": "legendary",
+        "tier": 4,
+        "description": "Blueprint for crafting the legendary Voidfang sword",
+        "icon": "recipe_legendary",
+        "effect": {
+          "type": "unlock_recipe",
+          "recipe_id": "craft_voidfang_legendary"
+        },
+        "max_stack": 1,
+        "consumed_on_use": true,
+        "level_requirement": 45,
+        "vendor_sell_price": 5000,
+        "can_trade": false,
+        "note": "Extremely rare drop"
+      }
+    ]
+  },
+  "item_categories": {
+    "currency": "Tradeable value tokens",
+    "consumable": "Single-use items with immediate effects",
+    "material": "Crafting components",
+    "recipe": "Unlocks crafting blueprints",
+    "key": "Opens special dungeons or chests"
+  },
+  "cooldown_categories": {
+    "healing": "All health restoration items share this cooldown",
+    "resource": "All resource restoration items share this cooldown"
+  },
+  "notes": {
+    "vendor_pricing": "vendor_buy_price = what player pays to buy from NPC. vendor_sell_price = what player gets selling to NPC. If buy_price is null, item cannot be purchased from vendors.",
+    "can_trade": "false = soulbound, cannot be traded to other players",
+    "tier": "Loosely correlates to item power level (1=common, 4=endgame)",
+    "max_stack": "Maximum quantity that can be in one inventory slot",
+    "cooldown": "Seconds before the item can be used again (0 = no cooldown)",
+    "consumed_on_use": "true = item is deleted after use, false = stays in inventory",
+    "effect_types": [
+      "instant_heal - Immediately restores HP",
+      "instant_resource - Immediately restores energy/mana",
+      "buff - Applies temporary stat boost",
+      "teleport - Moves player to location",
+      "identify_item - Reveals item stats",
+      "reset_skills - Refunds all skill points",
+      "open_dungeon - Creates dungeon portal",
+      "grant_random_pet - Awards random pet",
+      "apply_cosmetic - Changes item appearance",
+      "unlock_recipe - Adds recipe to crafting menu"
+    ]
+  }
+}
