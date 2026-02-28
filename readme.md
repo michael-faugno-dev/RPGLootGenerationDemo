@@ -2,7 +2,7 @@
 
 > **A production-grade, database-driven loot generation system for an indie multiplayer RPG**
 
-## 🎯 Project Summary
+##  Project Summary
 
 This is a comprehensive loot generation system built for **Re:Armed**, a loot-driven multiplayer game featuring robots with transformation abilities. The system demonstrates enterprise-level architecture with PostgreSQL database integration, materialized views for performance optimization, and a sophisticated procedural generation algorithm.
 
@@ -12,7 +12,7 @@ This is a comprehensive loot generation system built for **Re:Armed**, a loot-dr
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### High-Level Overview
 
@@ -185,7 +185,7 @@ CREATE TABLE legendary_item_fixed_affixes (
 
 **Design Philosophy:** Legendaries are hand-crafted unique items with fixed stats and special powers, not procedurally generated.
 
-### 🚀 Materialized Views (Performance Optimization)
+###  Materialized Views (Performance Optimization)
 
 #### **Why Materialized Views?**
 
@@ -441,7 +441,7 @@ This allows game code to read and implement unique mechanics per legendary.
 
 ---
 
-## 💾 Database Population
+##  Database Population
 
 ### From JSON to PostgreSQL
 
@@ -482,7 +482,7 @@ The system uses a two-step process:
 
 ---
 
-## 🔧 Technical Implementation Details
+##  Technical Implementation Details
 
 ### Connection String Management
 
@@ -572,7 +572,7 @@ This creates a persistent record of every dropped item with:
 
 ---
 
-## 📈 Performance Characteristics
+##  Performance Characteristics
 
 ### Query Performance
 
@@ -603,7 +603,7 @@ The system can easily handle:
 
 ---
 
-## 🎯 Design Decisions & Trade-offs
+##  Design Decisions & Trade-offs
 
 ### 1. **PostgreSQL vs NoSQL**
 
@@ -670,7 +670,7 @@ var rng = new Random(seed); // Can reproduce exact item
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 ### Planned Features
 
@@ -707,7 +707,7 @@ var rng = new Random(seed); // Can reproduce exact item
 
 ---
 
-## 📚 Learning Resources & Related Concepts
+##  Learning Resources & Related Concepts
 
 ### If You Want to Learn More
 
@@ -729,7 +729,7 @@ var rng = new Random(seed); // Can reproduce exact item
 
 ---
 
-## 🎓 Skills Demonstrated
+##  Skills Demonstrated
 
 This project showcases:
 
@@ -766,7 +766,7 @@ This project showcases:
 
 ---
 
-## 📞 Questions?
+##  Questions?
 
 **For Hiring Managers / Recruiters:**
 
@@ -786,7 +786,7 @@ This system demonstrates my ability to:
 
 ---
 
-## 📄 License
+##  License
 
 This project is part of the **Re:Armed** game development portfolio.
 
