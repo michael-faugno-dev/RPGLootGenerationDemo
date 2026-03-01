@@ -49,7 +49,7 @@ This is a comprehensive loot generation system built for **Re:Armed**, a loot-dr
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### Core Tables
 
@@ -248,7 +248,7 @@ REFRESH MATERIALIZED VIEW mv_weapon_relations;
 
 ---
 
-## 🎲 Procedural Generation Algorithm
+## Procedural Generation Algorithm
 
 ### Item Generation Flow
 
@@ -357,7 +357,7 @@ RolledAffix PickAffix(BaseItem item, string kind, string tier, Random rng)
 
 ---
 
-## 🎮 Game Design Features
+## Game Design Features
 
 ### 1. **Potential System** (Crafting Resource)
 
